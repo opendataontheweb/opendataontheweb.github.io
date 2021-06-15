@@ -1,8 +1,5 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/opendataontheweb/opendataontheweb.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Tomorrow's Forecast for KSE100
+    ![Image](http://15.184.99.140:9999/pred.png)
 
 ### Markdown
 
