@@ -5,7 +5,7 @@ var loaded = false;
 
 async function load(){
 
-    model = await tf.loadLayersModel('alexnet_xray_js/model.json');
+    model = await tf.loadLayersModel('models/alexnet_xray_js/model.json');
     loaded = true;
 
 }
