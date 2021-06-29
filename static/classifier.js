@@ -10,15 +10,17 @@ async function load(){
 
 }
 
-load();
-
 function LoadFile(event){
     img_url = URL.createObjectURL(event.target.files[0]);
     console.log(img_url);
 }
 function predict(){
 
-    if(loaded){
+    if(!loaded){
+        
+        load();
+        
+    }
 
         var image = new Image();
 
@@ -58,10 +60,6 @@ function predict(){
 
         }
 
-    }
-
-    else{
-        alert('Prediction model has not loaded yet, please try again in a few seconds');
-    }
+    
 
 }
