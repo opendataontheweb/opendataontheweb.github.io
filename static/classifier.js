@@ -15,10 +15,15 @@ function LoadFile(event){
     console.log(img_url);
 }
 function predict(){
+    
+    res = document.getElementById('result');
+        
+    res.innerHTML = "LOADING"
 
     if(!loaded){
         
         load();
+        
         
     }
 
