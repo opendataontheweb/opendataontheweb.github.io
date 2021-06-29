@@ -4,12 +4,13 @@ var loaded = false;
 
 async function load(){
 
+    res = document.getElementById('result');
+    res.innerHTML = "LOADING...";
     model = await tf.loadLayersModel('models/alexnet_xray_js/model.json');
     loaded = true;
+    res.innerHTML = "LOADED";
 
 }
-
-load();
 
 function LoadFile(event){
     img_url = URL.createObjectURL(event.target.files[0]);
@@ -18,6 +19,10 @@ function LoadFile(event){
 function predict(){
 
     if(loaded){
+        
+        res = document.getElementById('result');
+        
+        res.innerHTML = "PREDICTING...";
 
         var image = new Image();
 
