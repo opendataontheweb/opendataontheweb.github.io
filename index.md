@@ -1,7 +1,7 @@
 ## Our Browser Based Pneumonia Detector
 Using AlexNet - a convolutional neural network architecture - we were able to train a neural network to recognize signs of pneumonia in lungs with almost 90% accuracy. We have developed a browser based application using Tensorflowjs to make this tool available for general use. <a href="https://github.com/opendataontheweb/PneumoniaClassifier">View repository here.</a>
 
-#### Upload X-ray image
+#### Upload X-ray image:
 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 <script src="static/classifier.js"></script>
