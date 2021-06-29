@@ -1,30 +1,23 @@
-//<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 var model;
 var img_url;
 var loaded = false;
 
 async function load(){
 
-    model = tf.loadLayersModel('models/alexnet_xray_js/model.json');
+    model = await tf.loadLayersModel('models/alexnet_xray_js/model.json');
     loaded = true;
 
 }
+
+load();
 
 function LoadFile(event){
     img_url = URL.createObjectURL(event.target.files[0]);
     console.log(img_url);
 }
-async function predict(){
-    
-    res = document.getElementById('result');
-        
-    res.innerHTML = "LOADING"
+function predict(){
 
-    if(!loaded){
-        
-        await load();
-       
-    }
+    if(loaded){
 
         var image = new Image();
 
@@ -64,6 +57,10 @@ async function predict(){
 
         }
 
-    
+    }
+
+    else{
+        alert('Prediction model has not loaded yet, please try again in a few seconds');
+    }
 
 }
