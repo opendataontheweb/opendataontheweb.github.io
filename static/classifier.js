@@ -3,9 +3,9 @@ var model;
 var img_url;
 var loaded = false;
 
-async function load(){
+function load(){
 
-    model = await tf.loadLayersModel('models/alexnet_xray_js/model.json');
+    model = tf.loadLayersModel('models/alexnet_xray_js/model.json');
     loaded = true;
 
 }
