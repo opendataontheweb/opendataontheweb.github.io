@@ -150,7 +150,7 @@ function train(learning_rate) {
     $('#training').html('TRAINING');
     XY = read_forms(global_nx, global_m);
     lr_model.fit(XY[0], XY[1], learning_rate);
-    var eval = lr_model.evaluate(XY[0], XY[1], model.m);
+    var eval = lr_model.evaluate(XY[0], XY[1], lr_model.m);
     $('#training').html('TRAINED<br>ACCURACY: ' + eval.toString() + '<br>');
 }
 
