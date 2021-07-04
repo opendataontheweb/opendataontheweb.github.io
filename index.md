@@ -2,7 +2,7 @@
 
 Linear regression is a technique used in statistics and data science to predict continuous data based on previous knowledge of that data. We have created a tool allowing anyone without knowledge of programming linear regression to be able to use it to suit their needs. This tool is entirely browser based and requires no downloads.
 
-<script src="linear_regression.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="static/linear_regression.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 Number of inputs:<input type="number" id="n_x" value="0"><br>
 Number of training examples:<input type="number" id="m" value="0"><br>
 <input type="button" value="Create Table" onclick="create_forms(parseInt($('#n_x').val()), parseInt($('#m').val()));">
