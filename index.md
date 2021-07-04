@@ -11,7 +11,7 @@ Enter learning rate:
 <input type="number" id="lr"><br>
 <i>*Lower learning rates allow for more accuracy whereas higher learning rates allow for more speed</i><br>
 <input type="button" value="Train" onclick="train(parseFloat($('#lr').val()));"><br>
-<b><div id="training">Not TRAINED.</div></b><br>
+<h1 id="training">Not TRAINED.</h1><br>
 Enter inputs to predict:<br>
 <form id="inputs"><b>NO INPUTS</b></form><br>
 <input type="button" value="Predict" onclick="predict()">
