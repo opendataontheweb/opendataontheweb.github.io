@@ -149,8 +149,8 @@ function read_forms(n_x, m) {
 function train(learning_rate) {
     $('#training').html('TRAINING');
     XY = read_forms(global_nx, global_m);
-    model.fit(XY[0], XY[1], learning_rate);
-    var eval = model.evaluate(XY[0], XY[1], model.m);
+    lr_model.fit(XY[0], XY[1], learning_rate);
+    var eval = lr_model.evaluate(XY[0], XY[1], model.m);
     $('#training').html('TRAINED<br>ACCURACY: ' + eval.toString() + '<br>');
 }
 
@@ -164,13 +164,13 @@ function predict() {
 
     }
 
-    pred = model.predict(X);
+    pred = lr_model.predict(X);
 
     $('#Y_OUT').val(pred);
 
 }
 
-let model = new Model();
+let lr_model = new Model();
 
 //X = [[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9]];
 
