@@ -2,20 +2,7 @@
 
 Linear regression is a technique used in statistics and data science to predict continuous data based on previous knowledge of that data. We have created a tool allowing anyone without knowledge of programming linear regression to be able to use it to suit their needs. This tool is entirely browser based and requires no downloads.
 
-<script src="static/linear_regression.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-Number of inputs:<input type="number" id="n_x" value="0"><br>
-Number of training examples:<input type="number" id="m" value="0"><br>
-<input type="button" value="Create Table" onclick="create_forms(parseInt($('#n_x').val()), parseInt($('#m').val()));">
-<form id="form"></form>
-Enter learning rate:
-<input type="number" id="lr"><br>
-<i>*Lower learning rates allow for more accuracy whereas higher learning rates allow for more speed</i><br>
-<input type="button" value="Train" onclick="train(parseFloat($('#lr').val()));"><br>
-<h1 id="training">Not TRAINED.</h1><br>
-Enter inputs to predict:<br>
-<form id="inputs"><b>NO INPUTS</b></form><br>
-<input type="button" value="Predict" onclick="predict()">
-</html>
+<a href="linear_regression.html">Try it here</a>
 
 ## Our Browser Based Pneumonia Detector
 Using AlexNet - a convolutional neural network architecture - we were able to train a neural network to recognize signs of pneumonia in lungs with almost 90% accuracy. We have developed a browser based application using Tensorflowjs to make this tool available for general use. <a href="https://github.com/opendataontheweb/PneumoniaClassifier">View repository here.</a>
