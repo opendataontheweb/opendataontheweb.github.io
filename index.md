@@ -26,3 +26,5 @@ Disclaimer: The predictions by this model should not be regarded as absolute tru
 
 ## KSE100 Dataset
 <a href="/stock-exchange-kse-100pakistan.csv">stock-exchange-kse-100pakistan.csv (CSV)</a>
+
+<meta name="google-site-verification" content="AyrbLzja9jDUFV4NuJRvW8Qf0WY8aoqEl3KC-lHJ2i4" />
